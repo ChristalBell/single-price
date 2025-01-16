@@ -6,7 +6,15 @@ import React from "react";
 const Home = () => {
   return (
     <Box>
-      <Typography variant="h1">
+      <Typography
+        variant="h1"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "98vh",
+        }}
+      >
         <CardContainer />
       </Typography>
     </Box>
