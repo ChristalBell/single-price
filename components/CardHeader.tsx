@@ -13,13 +13,26 @@ const CardHeader = () => {
         color: COLORS.grey,
       }}
     >
-      <Typography sx={{ color: COLORS.teal }}>Join our community </Typography>
-      <Typography sx={{ color: COLORS.neonGreen }}>
+      <Typography
+        variant="h5"
+        sx={{ color: COLORS.teal, fontWeight: "bold", marginBottom: "2rem" }}
+      >
+        Join our community{" "}
+      </Typography>
+      <Typography
+        sx={{
+          color: COLORS.neonGreen,
+          marginBottom: ".75rem",
+          fontWeight: "bold",
+        }}
+      >
         30-day, hassle-free money back guarantee
       </Typography>
-      <Typography>
+      <Typography
+        sx={{ fontWeight: "bold", fontSize: ".9rem", lineHeight: "1.5rem" }}
+      >
         Gain access to our full library of tutorials along with expert code
-        reviews, perfect for any developers who are serious about honing their
+        reviews. Perfect for any developers who are serious about honing their
         skills.{" "}
       </Typography>
     </Box>

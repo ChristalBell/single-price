@@ -27,9 +27,22 @@ const WhyUs = () => {
         maxWidth: "19.875rem",
       }}
     >
-      <Typography>Why Us</Typography>
+      <Typography sx={{ fontWeight: "bold", marginBottom: ".75rem" }}>
+        Why Us
+      </Typography>
       {reasons.map((pros) => {
-        return <Typography key={pros}> {pros}</Typography>;
+        return (
+          <Typography
+            sx={{
+              fontSize: ".75rem",
+              lineHeight: "1.2rem",
+            }}
+            key={pros}
+          >
+            {" "}
+            {pros}
+          </Typography>
+        );
       })}
     </Box>
   );

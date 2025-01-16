@@ -17,14 +17,47 @@ const CTA = () => {
         borderRadius: mobile ? "0" : "0 0 0 0.5rem ",
         padding: "2.5rem",
         color: COLORS.white,
+        alignContent: "center",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <Typography>Monthly Subscription</Typography>
-      <Typography>
-        <span>$29</span> per month
+      <Typography sx={{ fontWeight: "bold", marginBottom: ".75rem" }}>
+        Monthly Subscription
       </Typography>
-      <Typography>Full access for less than $1 a day</Typography>
-      <Button sx={{ backgroundColor: COLORS.neonGreen }}>Sign Up</Button>
+      <Typography
+        sx={{
+          fontSize: ".75rem",
+          color: COLORS.grey,
+          fontWeight: "light",
+        }}
+      >
+        <span
+          style={{
+            fontWeight: "bold",
+            fontSize: "1.75rem",
+            marginRight: ".5rem",
+            color: COLORS.white,
+          }}
+        >
+          $29
+        </span>{" "}
+        per month
+      </Typography>
+      <Typography
+        sx={{ fontSize: ".75rem", marginBottom: "2rem", marginTop: ".25rem" }}
+      >
+        Full access for less than $1 a day
+      </Typography>
+      <Button
+        sx={{
+          backgroundColor: COLORS.neonGreen,
+          color: COLORS.white,
+          "&:hover": { backgroundColor: COLORS.white, color: COLORS.teal },
+        }}
+      >
+        Sign Up
+      </Button>
     </Box>
   );
 };
