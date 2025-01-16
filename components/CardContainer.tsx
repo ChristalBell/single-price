@@ -14,7 +14,7 @@ const CardContainer = () => {
       }}
     >
       <CardHeader />
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
         <CTA />
         <WhyUs />
       </Box>
